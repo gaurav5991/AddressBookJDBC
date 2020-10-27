@@ -1,3 +1,32 @@
 *******Welcome to Address Book System SQL Section********
 
 mysql> CREATE DATABASE AddressBookService;
+
+mysql> USe AddressBookService;
+Database changed
+
+mysql> CREATE TABLE AddressBook
+    -> (
+    -> First_Name VARCHAR(15) NOT NULL,
+    -> Last_Name VARCHAR(15) NOT NULL,
+    -> Address VARCHAR(150) NOT NULL,
+    -> City VARCHAR(15) NOT NULL,
+    -> State VARCHAR(15) NOT NULL,
+    -> Zip BIGINT NOT NULL,
+    -> Phone_Number BIGINT NOT NULL,
+    -> Email VARCHAR(150) NOT NULL,
+    -> PRIMARY KEY(First_Name));
+
+mysql> DESCRIBE AddressBook;
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| First_Name   | varchar(15)  | NO   | PRI | NULL    |       |
+| Last_Name    | varchar(15)  | NO   |     | NULL    |       |
+| Address      | varchar(150) | NO   |     | NULL    |       |
+| City         | varchar(15)  | NO   |     | NULL    |       |
+| State        | varchar(15)  | NO   |     | NULL    |       |
+| Zip          | bigint       | NO   |     | NULL    |       |
+| Phone_Number | bigint       | NO   |     | NULL    |       |
+| Email        | varchar(150) | NO   |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
