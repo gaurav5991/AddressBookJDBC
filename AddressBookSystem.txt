@@ -2,7 +2,7 @@
 
 mysql> CREATE DATABASE AddressBookService;
 
-mysql> USe AddressBookService;
+mysql> USE AddressBookService;
 Database changed
 
 mysql> CREATE TABLE AddressBook
@@ -30,3 +30,20 @@ mysql> DESCRIBE AddressBook;
 | Phone_Number | bigint       | NO   |     | NULL    |       |
 | Email        | varchar(150) | NO   |     | NULL    |       |
 +--------------+--------------+------+-----+---------+-------+
+
+mysql> INSERT INTO AddressBook(First_Name,Last_Name,Address,City,State,Zip,Phone_Number,Email)
+    -> VALUES('Gaurav','Sharma','Adarsh Nagar','Jaipur','Rajasthan',305001,9876543210,'abc@gmail.com'),
+    -> ('Harsh','Singh','Vaishali Nagar', 'New Delhi','Delhi',222333,7896541230,'xyz@gmail.com'),
+    -> ('Shefali','Verma','124/A Shastri Nagar','Mumbai','Maharashtra',412210,8745961230,'qwr@yahoo.com');
+
+
+mysql> SELECT * FROM AddressBook;
++------------+-----------+---------------------+-----------+-------------+--------+--------------+---------------+
+| First_Name | Last_Name | Address             | City      | State       | Zip    | Phone_Number | Email         |
++------------+-----------+---------------------+-----------+-------------+--------+--------------+---------------+
+| Gaurav     | Sharma    | Adarsh Nagar        | Jaipur    | Rajasthan   | 305001 |   9876543210 | abc@gmail.com |
+| Harsh      | Singh     | Vaishali Nagar      | New Delhi | Delhi       | 222333 |   7896541230 | xyz@gmail.com |
+| Shefali    | Verma     | 124/A Shastri Nagar | Mumbai    | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com |
++------------+-----------+---------------------+-----------+-------------+--------+--------------+---------------+
+
+
