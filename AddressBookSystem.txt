@@ -145,3 +145,11 @@ mysql> SELECT * FROM AddressBook;
 | Shefali    | Verma     | 124/A Shastri Nagar | Mumbai | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com    | NULL | Family |
 | Terisa     | Brown     | Street 2            | City 2 | California  | 123457 |   9876543222 | Terisa@email.com | NULL | Family |
 +------------+-----------+---------------------+--------+-------------+--------+--------------+------------------+------+--------+
+
+
+mysql> SELECT COUNT(type) FROM AddressBook;
++-------------+
+| COUNT(type) |
++-------------+
+|           5 |
++-------------+
