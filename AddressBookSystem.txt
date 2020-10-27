@@ -46,4 +46,19 @@ mysql> SELECT * FROM AddressBook;
 | Shefali    | Verma     | 124/A Shastri Nagar | Mumbai    | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com |
 +------------+-----------+---------------------+-----------+-------------+--------+--------------+---------------+
 
+mysql> UPDATE AddressBook
+    -> SET Address = '1458/A Saket'
+    -> WHERE First_Name = 'Gaurav';
+
+
+mysql> SELECT * FROM AddressBook;
++------------+-----------+---------------------+-----------+-------------+--------+--------------+---------------+
+| First_Name | Last_Name | Address             | City      | State       | Zip    | Phone_Number | Email         |
++------------+-----------+---------------------+-----------+-------------+--------+--------------+---------------+
+| Gaurav     | Sharma    | 1458/A Saket        | Jaipur    | Rajasthan   | 305001 |   9876543210 | abc@gmail.com |
+| Harsh      | Singh     | Vaishali Nagar      | New Delhi | Delhi       | 222333 |   7896541230 | xyz@gmail.com |
+| Shefali    | Verma     | 124/A Shastri Nagar | Mumbai    | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com |
++------------+-----------+---------------------+-----------+-------------+--------+--------------+---------------+
+
+
 
