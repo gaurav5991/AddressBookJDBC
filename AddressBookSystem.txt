@@ -61,4 +61,15 @@ mysql> SELECT * FROM AddressBook;
 +------------+-----------+---------------------+-----------+-------------+--------+--------------+---------------+
 
 
+mysql> DELETE FROM AddressBook
+    -> WHERE First_Name = 'Harsh'
+    -> AND Last_Name = 'Singh';
 
+
+mysql> SELECT * FROM AddressBook;
++------------+-----------+---------------------+--------+-------------+--------+--------------+---------------+
+| First_Name | Last_Name | Address             | City   | State       | Zip    | Phone_Number | Email         |
++------------+-----------+---------------------+--------+-------------+--------+--------------+---------------+
+| Gaurav     | Sharma    | 1458/A Saket        | Jaipur | Rajasthan   | 305001 |   9876543210 | abc@gmail.com |
+| Shefali    | Verma     | 124/A Shastri Nagar | Mumbai | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com |
++------------+-----------+---------------------+--------+-------------+--------+--------------+---------------+
