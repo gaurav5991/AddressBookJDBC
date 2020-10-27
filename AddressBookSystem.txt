@@ -73,3 +73,20 @@ mysql> SELECT * FROM AddressBook;
 | Gaurav     | Sharma    | 1458/A Saket        | Jaipur | Rajasthan   | 305001 |   9876543210 | abc@gmail.com |
 | Shefali    | Verma     | 124/A Shastri Nagar | Mumbai | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com |
 +------------+-----------+---------------------+--------+-------------+--------+--------------+---------------+
+
+
+mysql> SELECT * FROM AddressBook
+    -> WHERE City = 'Jaipur';
++------------+-----------+--------------+--------+-----------+--------+--------------+---------------+
+| First_Name | Last_Name | Address      | City   | State     | Zip    | Phone_Number | Email         |
++------------+-----------+--------------+--------+-----------+--------+--------------+---------------+
+| Gaurav     | Sharma    | 1458/A Saket | Jaipur | Rajasthan | 305001 |   9876543210 | abc@gmail.com |
++------------+-----------+--------------+--------+-----------+--------+--------------+---------------+
+
+mysql> SELECT * FROM AddressBook
+    -> WHERE State = 'Maharashtra';
++------------+-----------+---------------------+--------+-------------+--------+--------------+---------------+
+| First_Name | Last_Name | Address             | City   | State       | Zip    | Phone_Number | Email         |
++------------+-----------+---------------------+--------+-------------+--------+--------------+---------------+
+| Shefali    | Verma     | 124/A Shastri Nagar | Mumbai | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com |
++------------+-----------+---------------------+--------+-------------+--------+--------------+---------------+
