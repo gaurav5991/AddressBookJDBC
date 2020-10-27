@@ -1,1 +1,3 @@
 *******Welcome to Address Book System SQL Section********
+
+mysql> CREATE DATABASE AddressBookService;
