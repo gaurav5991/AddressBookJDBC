@@ -153,3 +153,18 @@ mysql> SELECT COUNT(type) FROM AddressBook;
 +-------------+
 |           5 |
 +-------------+
+
+
+mysql> INSERT INTO AddressBook VALUES ( 'Terisa', 'Brown', 'Street 2', 'City 2','California', '123457', '9876543222', 'Terisa@email.com',NULL,'Friend');
+
+mysql> SELECT * FROM AddressBook;
++------------+-----------+---------------------+--------+-------------+--------+--------------+------------------+------+--------+
+| First_Name | Last_Name | Address             | City   | State       | Zip    | Phone_Number | Email            | name | type   |
++------------+-----------+---------------------+--------+-------------+--------+--------------+------------------+------+--------+
+| Adams      | Baker     | Street 2            | City 2 | California  | 123457 |   9876543220 | Adams@email.com  | NULL | Family |
+| Gaurav     | Sharma    | 1458/A Saket        | Jaipur | Rajasthan   | 305001 |   9876543210 | abc@gmail.com    | NULL | Family |
+| Quinn      | Smith     | Street 5            | City 2 | California  | 123459 |   9876543229 | Quinn@email.com  | NULL | Family |
+| Shefali    | Verma     | 124/A Shastri Nagar | Mumbai | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com    | NULL | Family |
+| Terisa     | Brown     | Street 2            | City 2 | California  | 123457 |   9876543222 | Terisa@email.com | NULL | Family |
+| Terisa     | Brown     | Street 2            | City 2 | California  | 123457 |   9876543222 | Terisa@email.com | NULL | Friend |
++------------+-----------+---------------------+--------+-------------+--------+--------------+------------------+------+--------+
