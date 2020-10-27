@@ -108,3 +108,26 @@ mysql> SELECT State,COUNT(State) FROM AddressBook GROUP BY State;
 | Rajasthan   |            1 |
 | Maharashtra |            1 |
 +-------------+--------------+
+
+mysql> SELECT * FROM AddressBook;
++------------+-----------+---------------------+--------+-------------+--------+--------------+------------------+
+| First_Name | Last_Name | Address             | City   | State       | Zip    | Phone_Number | Email            |
++------------+-----------+---------------------+--------+-------------+--------+--------------+------------------+
+| Adams      | Baker     | Street 2            | City 2 | California  | 123457 |   9876543220 | Adams@email.com  |
+| Gaurav     | Sharma    | 1458/A Saket        | Jaipur | Rajasthan   | 305001 |   9876543210 | abc@gmail.com    |
+| Quinn      | Smith     | Street 5            | City 2 | California  | 123459 |   9876543229 | Quinn@email.com  |
+| Shefali    | Verma     | 124/A Shastri Nagar | Mumbai | Maharashtra | 412210 |   8745961230 | qwr@yahoo.com    |
+| Terisa     | Brown     | Street 2            | City 2 | California  | 123457 |   9876543222 | Terisa@email.com |
++------------+-----------+---------------------+--------+-------------+--------+--------------+------------------+
+
+
+mysql> SELECT * FROM AddressBook
+    -> WHERE City = 'City 2'
+    -> ORDER BY First_Name;
++------------+-----------+----------+--------+------------+--------+--------------+------------------+
+| First_Name | Last_Name | Address  | City   | State      | Zip    | Phone_Number | Email            |
++------------+-----------+----------+--------+------------+--------+--------------+------------------+
+| Adams      | Baker     | Street 2 | City 2 | California | 123457 |   9876543220 | Adams@email.com  |
+| Quinn      | Smith     | Street 5 | City 2 | California | 123459 |   9876543229 | Quinn@email.com  |
+| Terisa     | Brown     | Street 2 | City 2 | California | 123457 |   9876543222 | Terisa@email.com |
++------------+-----------+----------+--------+------------+--------+--------------+------------------+
